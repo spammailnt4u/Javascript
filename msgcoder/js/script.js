@@ -22,6 +22,7 @@ function decoder() {
   message2.forEach(msgdecoder);
   if (message2 == "NaN") {
     alert("Please enter \(a\) number\(s\)");
+    return;
   }
   else {
     document.getElementById("result2").value = message2.join(" ");

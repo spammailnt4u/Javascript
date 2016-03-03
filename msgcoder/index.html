@@ -12,18 +12,18 @@
     <header>
       <h1>Message Coder</h1>
     </header>
-    <form action="/js/script.js">
-      <input type="text" id="msg" value="Enter Text Here" onfocus="if(this.value == 'Enter Text Here') { this.value = ''; }">
-      <input type="button" class="submit" value="Submit" onclick="coder()">
-      <input type="text" id="result" value="Result" readonly>
+    <form onsubmit="coder(); return false;">
+      <input type="text" id="msg" value="Enter Text Here" onfocus="if(this.value == 'Enter Text Here') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Enter Text Here'; }">
+      <input type="submit" value="Submit" onclick="coder()">
+      <input type="text" id="result" value="Result" onclick="this.focus();this.select()" readonly>
     </form>
     <header>
       <h1>Message Decoder</h1>
     </header>
-    <form action="/js/script.js">
-      <input type="text" id="msg2" value="Enter Code Here" onfocus="if(this.value == 'Enter Code Here') { this.value = ''; }">
-      <input type="button" class="submit" value="Submit" onclick="decoder()">
-      <input type="text" id="result2" value="Result" readonly>
+    <form onsubmit="decoder(); return false;">
+      <input type="text" id="msg2" value="Enter Code Here" onfocus="if(this.value == 'Enter Code Here') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Enter Code Here'; }">
+      <input type="submit" class="submit" value="Submit" onclick="decoder()">
+      <input type="text" id="result2" value="Result" onclick="this.focus();this.select()" readonly>
     </form>
     <script src="js/script.js"></script>
   </body>
