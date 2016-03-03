@@ -1,3 +1,13 @@
+function clearform() {
+  if(document.getElementById("msg").value == 'Enter Text Here') { document.getElementById("msg").value = ''; }
+  else if(document.getElementById("msg").value == '') { document.getElementById("msg").value = 'Enter Text Here'; }
+}
+
+function cleardecoder() {
+  if(document.getElementById("msg2").value == 'Enter Code Here') { document.getElementById("msg2").value = '';}
+  else if(document.getElementById("msg2").value == '') { document.getElementById("msg2").value = 'Enter Code Here';}
+}
+
 var cont = true;
 
 function coder() {
