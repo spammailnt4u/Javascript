@@ -1,0 +1,2 @@
+var doubleEscape = "";
+alert(doubleEscape);

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Walking the Dom
+    </title>
+  </head>
+  <body>
+    <h1>
+      This is a template for walking the DOM
+    </h1>
+    <ul id="test"><!-- This is going to show up as your 0 node because comments and free space count as nodes -->
+      <li>firstChild</li>
+      <li>secondChild</li>
+      <li>thirdChild</li>
+      <li>lastChild</li>
+    </ul>
+    <script>
+      alert("Script is working");
+      var ul = document.getElementById('test')
+      var li = ul.childNodes[2];
+      var li2 = ul.childNodes[4];
+      var li3 = ul.childNodes[6];
+      alert(li.innerHTML);
+      li.innerHTML = "This is actually your third node because of the comment node and space node that come before it.";
+      li2.innerHTML = "This is using innerHTML and is therefore using HTML rich <a href='after'>text</a>"
+      li3.innerText = "This is using innerText and is therefore using plain <a href='after'>text</a>"
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+body {
+  background: #333;
+}
+
+header {
+  font: bold Arial, Helvetica, sans-serif;
+  color: #c00;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+.submit {
+  cursor: pointer;
+}
+
+input {
+  width: 30%;
+  background: #737373;
+  border: none;
+  padding: 5px
+}
+
+#result, #result2 {
+  width: 40%;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}

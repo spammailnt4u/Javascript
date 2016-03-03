@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>getAttribute test</title>
+  </head>
+  <body>
+    <p id="test" href="">This is the content that we are getting an attribute for</p>
+    <script>
+      var test = document.getElementById('test');
+      var testid = test.getAttribute("id");
+      var testunset = test.getAttribute("href");
+      if (testid == "test") {
+        alert("Yay! This browser works with the getAttribute property! The id of that paragraph is " + testid + ".")
+      }
+      else {
+        alert("Darn! This browser doesn't work with getAttribute! The returned value for the id is " + testid + ".")
+      }
+      alert("For unset values this browser returns " + testunset + ".");
+    </script>
+  </body>
+</html>
