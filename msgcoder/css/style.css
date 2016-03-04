@@ -9,6 +9,18 @@ header {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
+a{
+  color: #c00;
+  text-decoration: none;
+}
+a:hover {
+  color:white;
+}
+
 form {
   text-align: center;
 }
@@ -21,7 +33,7 @@ input {
   width: 30%;
   background: #737373;
   border: none;
-  padding: 5px
+  padding: 5px;
 }
 
 #result, #result2 {
