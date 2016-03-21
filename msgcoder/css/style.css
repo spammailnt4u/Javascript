@@ -42,3 +42,33 @@ input {
   padding: 10px;
   text-align: center;
 }
+
+@media screen and (max-device-width: 780px) {
+  #result, #result2 {
+    width: 100%;
+    margin: 2.5px 0;
+    padding: 5px 0px;
+    text-align: center;
+    font-size: 30px;
+  }
+  input {
+    width: 100%;
+    margin: 2.5px 0;
+    padding: 5px 0px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-device-width: 375px) {
+  #result, #result2 {
+    margin: 1px 0;
+    padding: 2px 0px;
+    text-align: center;
+    font-size: 40px;
+  }
+  input {
+    margin: 1px 0;
+    padding: 2px 0px;
+    font-size: 40px;
+  }
+}
