@@ -43,7 +43,7 @@ input {
   padding: 10px;
 }
 
-@media screen and (max-device-width: 780px) {
+@media (max-width: 780px), (max-device-width: 780px) {
   input {
     width: 100%;
     margin: 0px 0px 10px 0px;
@@ -58,29 +58,7 @@ input {
   }
 }
 
-@media screen and (max-width: 780px) {
-  input {
-    width: 100%;
-    margin: 0px 0px 10px 0px;
-    padding: 5px 0px;
-    font-size: 30px;
-  }
-  #result, #result2 {
-    width: 100%;
-    margin: 0px;
-    padding: 5px 0px;
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-device-width: 375px) {
-  input {
-    margin: 0px 0px 7px 0px;
-    padding: 2px 0px;
-  }
-}
-
-@media screen and (max-width: 375px) {
+@media (max-width:375px), (max-device-width: 375px) {
   input {
     margin: 0px 0px 7px 0px;
     padding: 2px 0px;
