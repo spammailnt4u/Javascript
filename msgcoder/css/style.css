@@ -23,8 +23,6 @@ a:hover {
 
 form {
   text-align: center;
-  /*display: flex;
-  flex-direction: column;*/
 }
 
 .submit {
@@ -36,75 +34,55 @@ input {
   background: #737373;
   border: none;
   padding: 5px;
+  text-align: center;
 }
 
 #result, #result2 {
   width: 40%;
   margin: 20px;
   padding: 10px;
-  text-align: center;
 }
 
 @media screen and (max-device-width: 780px) {
-  #result, #result2 {
-    width: 100%;
-    margin: 0px;
-    padding: 5px 0px;
-    text-align: center;
-    font-size: 30px;
-  }
   input {
     width: 100%;
     margin: 0px 0px 10px 0px;
     padding: 5px 0px;
     font-size: 30px;
-    flex: 1;
+  }
+  #result, #result2 {
+    width: 100%;
+    margin: 0px;
+    padding: 5px 0px;
+    font-size: 30px;
   }
 }
 
 @media screen and (max-width: 780px) {
-  #result, #result2 {
-    width: 100%;
-    margin: 0px;
-    padding: 5px 0px;
-    text-align: center;
-    font-size: 30px;
-  }
   input {
     width: 100%;
     margin: 0px 0px 10px 0px;
     padding: 5px 0px;
     font-size: 30px;
-    flex: 1;
+  }
+  #result, #result2 {
+    width: 100%;
+    margin: 0px;
+    padding: 5px 0px;
+    font-size: 30px;
   }
 }
 
 @media screen and (max-device-width: 375px) {
-  #result, #result2 {
-    margin: 0px;
-    padding: 2px 0px;
-    text-align: center;
-    font-size: 40px;
-  }
   input {
     margin: 0px 0px 7px 0px;
     padding: 2px 0px;
-    font-size: 40px;
-    flex: 1;
   }
 }
 
 @media screen and (max-width: 375px) {
-  #result, #result2 {
-    margin: 0px;
-    padding: 2px 0px;
-    text-align: center;
-    font-size: 40px;
-  }
   input {
     margin: 0px 0px 7px 0px;
     padding: 2px 0px;
-    font-size: 40px;
-    flex: 1;
   }
 }
