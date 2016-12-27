@@ -37,7 +37,7 @@ input {
   text-align: center;
 }
 
-#result, #result2 {
+.result {
   width: 40%;
   margin: 20px;
   padding: 10px;
@@ -50,7 +50,7 @@ input {
     padding: 5px 0px;
     font-size: 30px;
   }
-  #result, #result2 {
+  .result {
     width: 100%;
     margin: 0px;
     padding: 5px 0px;
